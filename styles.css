@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Sigmar&display=swap");
 
 :root {
-  --background: #587782;
+  --background: #42252e;
+  --background-2b: #000000;
   --textcolor-white: #ffffff;
-  --textcolor-black: #000000;
+  --textcolor-gray: #949191;
+  --background-3b: #595bf7;
 }
 * {
   margin: 0;
@@ -20,24 +22,183 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
-  padding: 20px 70px;
+  height: 65px;
+  padding: 0 55px;
   position: fixed;
-  overflow: hidden;
+  top: 0;
+  z-index: 2;
 }
 
 .logo {
-  height: 105px;
+  height: 95%;
 }
 .navbar,
 .navbar-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+}
+.navbar {
+  gap: 70px;
+}
+.navbar-list {
+  gap: 35px;
 }
 .navbar-list a {
-  color: var(--textcolor-white);
+  color: var(--textcolor-gray);
   font-size: 20px;
+}
+.navbar-list li:first-child > a {
+  color: var(--textcolor-white);
+  font-weight: 600;
+}
+.cart-icon {
+  font-weight: 600;
+  border-radius: 10px;
+  height: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+main {
+  background-color: var(--background-2b);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--textcolor-white);
+  width: 100%;
+}
+
+/* section hero info*/
+#hero {
+  margin-top: 75px;
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 50%;
+}
+.hero-info h1 {
+  font-size: 48px;
+  width: 80%;
+  min-width: 530px;
   font-weight: 800;
+  color: var(--textcolor-white);
+}
+.hero-info p {
+  font-size: 14px;
+  width: 70%;
+  color: var(--textcolor-gray);
+}
+.hero-info p > span {
+  font-weight: 800;
+  color: var(--textcolor-white);
+}
+.hero-info a {
+  color: var(--textcolor-white);
+  background-color: var(--background-3b);
+  width: 120px;
+  padding: 8px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+/* section hero card */
+.hero-card {
+  width: 300px;
+  background-color: var(--background);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.hero-card img {
+  border-radius: 5px;
+}
+.hero-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* sirve para hacer los puntitos en el texto caundo sobrepasa los limites!!! */
+.hero-card-top h3 {
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hero-card-top span {
+  background-color: var(--background-3b);
+  text-align: center;
+  width: 75px;
+  padding: 8px 0;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hero-card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-card-creator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hero-card-creator img {
+  width: 45px;
+  height: 45px;
+}
+.creator-info p:first-child,
+.hero-card-price p {
+  color: var(--textcolor-gray);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* section text-info */
+#text-info {
+  max-width: 1200px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#text-info h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--textcolor-white);
+  background-color: var(--background);
+  width: 80%;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.text-p {
+  font-size: 16px;
+  width: 80%;
+  color: var(--textcolor-gray);
+}
+.text-p span {
+  font-weight: 800;
+  color: var(--textcolor-white);
 }
