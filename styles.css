@@ -16,6 +16,8 @@
   list-style-type: none;
 }
 
+/* navbar */
+
 header {
   background-color: var(--background);
   width: 100%;
@@ -69,8 +71,9 @@ main {
   width: 100%;
 }
 
-/* section hero info*/
-#hero {
+/* section port info*/
+
+#port {
   margin-top: 75px;
   padding: 70px 0;
   max-width: 1200px;
@@ -78,30 +81,31 @@ main {
   justify-content: center;
   align-items: center;
 }
-.hero-info {
+.port-info {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
   width: 50%;
 }
-.hero-info h1 {
+.port-info h1 {
   font-size: 48px;
   width: 80%;
   min-width: 530px;
   font-weight: 800;
   color: var(--textcolor-white);
 }
-.hero-info p {
+
+.port-info p {
   font-size: 14px;
   width: 70%;
   color: var(--textcolor-gray);
 }
-.hero-info p > span {
+.port-info p > span {
   font-weight: 800;
   color: var(--textcolor-white);
 }
-.hero-info a {
+.port-info a {
   color: var(--textcolor-white);
   background-color: var(--background-3b);
   width: 120px;
@@ -110,8 +114,10 @@ main {
   font-size: 14px;
   text-align: center;
 }
-/* section hero card */
-.hero-card {
+
+/* section port card */
+
+.port-card {
   width: 300px;
   background-color: var(--background);
   padding: 20px;
@@ -121,15 +127,15 @@ main {
   justify-content: center;
   gap: 20px;
 }
-.hero-card img {
+.port-card img {
   border-radius: 5px;
 }
-.hero-card-info {
+.port-card-info {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.hero-card-top {
+.port-card-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -137,14 +143,18 @@ main {
 }
 
 /* sirve para hacer los puntitos en el texto caundo sobrepasa los limites!!! */
-.hero-card-top h3 {
+
+.port-card-top h3 {
   font-weight: 600;
   font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.hero-card-top span {
+
+/* sirve para hacer los puntitos en el texto caundo sobrepasa los limites!!! */
+
+.port-card-top span {
   background-color: var(--background-3b);
   text-align: center;
   width: 75px;
@@ -153,30 +163,30 @@ main {
   border-radius: 10px;
   cursor: pointer;
 }
-.hero-card-bottom {
+.port-card-bottom {
   display: flex;
   justify-content: space-between;
 }
-.hero-card-creator {
+.port-card-tipo {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.hero-card-creator img {
+.port-card-tipo img {
   width: 45px;
   height: 45px;
 }
-.creator-info p:first-child,
-.hero-card-price p {
+.tipo-info p:first-child,
+.port-card-price p {
   color: var(--textcolor-gray);
   font-size: 14px;
   font-weight: 300;
 }
 
 /* section text-info */
+
 #text-info {
   max-width: 1200px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,6 +207,7 @@ main {
   font-size: 16px;
   width: 80%;
   color: var(--textcolor-gray);
+  margin-bottom: 20px;
 }
 .text-p span {
   font-weight: 800;
