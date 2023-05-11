@@ -1,0 +1,142 @@
+@media (max-width: 992px) {
+  /* responsive  */
+  /* tablet */
+  .navba {
+    gap: 10px;
+  }
+  .cart-icon {
+    height: 33px;
+    margin-top: 4px;
+    margin-right: 0rem;
+  }
+
+  .navbar-list {
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background-color: #42252e;
+    border: 2px solid var(--textcolor-gray);
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+  }
+
+  .navbar-list a {
+    font-size: 18px;
+  }
+
+  .navbar-list li:hover {
+    background: linear-gradient(to top, #e91515, #55054a);
+    padding: 15px 15px;
+  }
+
+  .menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .menu-label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
+
+  .port-info {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .port-info h1 {
+    width: 90%;
+    max-width: 500px;
+    min-width: unset;
+  }
+
+  .port-info p {
+    width: 60%;
+    max-width: 600px;
+  }
+
+  .port-card {
+    display: none;
+  }
+
+  /* contact */
+
+  #contact {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .banner {
+    width: 320px;
+    height: 225px;
+  }
+
+  .banner img {
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  .ctc-info {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .ctc-card {
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* footer */
+
+  footer a,
+  footer p {
+    font-weight: 250;
+    font-size: 13px;
+  }
+
+  .footer-info p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .port-info h1 {
+    font-size: 30px;
+    width: 80%;
+    font-weight: 800;
+  }
+
+  #info h2 {
+    font-size: 30px;
+    width: 80%;
+    font-weight: 800;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .ctc-container {
+    flex-direction: column;
+  }
+}

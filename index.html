@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <title>Mi Navbar</title>
   </head>
   <body>
@@ -15,6 +16,10 @@
         class="logo"
       />
       <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/menu.png" alt="" class="menu-icon" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="navbar-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">Cortes</a></li>
@@ -22,11 +27,19 @@
           <li><a href="#contact">Contactos</a></li>
           <li><a href="#contact">Nosotros</a></li>
         </ul>
-        <img
+        <label for="cart-toggle" class="cart-label">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5087/5087847.png"
+            alt="Carrito de compras"
+            class="cart-icon"
+          />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <!-- <img
           src="https://cdn-icons-png.flaticon.com/512/5087/5087847.png"
           alt="card logo"
           class="cart-icon"
-        />
+        /> -->
       </nav>
     </header>
     <main>
@@ -89,6 +102,103 @@
           </p>
         </div>
       </section>
+      <section id="info">
+        <h2>Recomendaciones para manipular cortes E.V.</h2>
+        <div class="info-cards-container">
+          <div class="info-card">
+            <img src="./assets/info.png" alt="Icono Info" />
+            <h3>CADENA DE FRIO</h3>
+            <p>
+              Un alimento fresco puede permanecer como máximo dos horas a
+              temperatura ambiente. Por eso, se recomienda ser los primeros en
+              guardarse en la heladera.
+            </p>
+          </div>
+          <div class="info-card">
+            <img src="./assets/info.png" alt="Icono Info" />
+            <h3>GUARDAR ALIMENTOS</h3>
+            <p>
+              Guardar en la gaveta superior de la heladera entre 1° y 2°. Los
+              cortes envasados al vacío puede permanecer congelados hasta por 12
+              meses.
+            </p>
+          </div>
+          <div class="info-card">
+            <img src="./assets/info.png" alt="Icono Info" />
+            <h3>MODO DE COCCIÓN</h3>
+            <p>
+              Asegurarse que la temperatura con la que se cocinar siempre sea
+              mayor a los 70ºC. El tiempo de cocción de los alimentos que se
+              encuentran congelados es mayor al habitual.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="ctc-info">
+          <h2>Contacto</h2>
+          <div class="ctc-container">
+            <div class="ctc-card">
+              <h3>SAMUEL GARCIA</h3>
+              <div class="ctc-card-info">
+                <div class="ctc-usu">
+                  <img src="./assets/ubicacion.png" alt="ubi" />
+                  <p>Roque Saenz Peña 125, Cordoba</p>
+                </div>
+                <div class="ctc-usu">
+                  <img src="./assets/correo.png" alt="correo" />
+                  <p>samugarc45@gmail.com</p>
+                </div>
+                <div class="ctc-usu">
+                  <img src="./assets/celular.png" alt="celu" />
+                  <p>0351-59874535</p>
+                </div>
+              </div>
+            </div>
+            <div class="ctc-card">
+              <h3>CARLOS LOPEZ</h3>
+              <div class="ctc-card-info">
+                <div class="ctc-usu">
+                  <img src="./assets/ubicacion.png" alt="ubi" />
+                  <p>AV. Villafañe 125, Cordoba</p>
+                </div>
+                <div class="ctc-usu">
+                  <img src="./assets/correo.png" alt="correo" />
+                  <p>scarlo61@gmail.com</p>
+                </div>
+                <div class="ctc-usu">
+                  <img src="./assets/celular.png" alt="celu" />
+                  <p>0351-59476414</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ctc-redes">
+            <img src="./assets/fb.png" alt="logo fb" />
+            <img src="./assets/tw.png" alt="logo tw" />
+            <img src="./assets/inst.png" alt="logo inst" />
+          </div>
+        </div>
+        <div class="banner">
+          <img src="./assets/banner22.jpg" alt="baner" />
+        </div>
+      </section>
     </main>
+    <footer>
+      <div>
+        <ul class="footer-links">
+          <li><a href="#">Terminos de uso</a></li>
+          <li><a href="#">Trabaja con nosotros</a></li>
+          <li><a href="#">Soporte</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <p>
+          © 2023 BlackBull | Todos los derechos reservados | Desarrollado por
+          <span>Agustin Gabriel</span>
+        </p>
+        <img src="./assets/aglog.png" alt="Logo agu" />
+      </div>
+    </footer>
   </body>
 </html>
